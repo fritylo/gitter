@@ -4,7 +4,7 @@ import sys
 
 
 GITTER_TASKS_PATH = os.path.expanduser('~/gitter-tasks.json')
-MAIN_BRANCH = 'master'
+MAIN_BRANCH = 'main'
 
 
 def main():
