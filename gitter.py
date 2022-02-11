@@ -4,7 +4,7 @@ import sys
 
 
 GITTER_TASKS_PATH = os.path.expanduser('~/gitter-tasks.json')
-MAIN_BRANCH = 'main'
+MAIN_BRANCH = 'master'
 
 
 def main():
@@ -97,6 +97,9 @@ Run `python gitter.py {command}`, where command:
    # COMMITS
    commit {task_name} {message} --- creates new commit for task
    merge {task_name} -------------- git checkout to main branch, and then git merge task with --no-ff param
+   
+   # SPECIAL
+   Use '@' instead of {task_name} to use last used {task_name}
    
    # INFO
    Tasks are saved in """ + GITTER_TASKS_PATH + """
